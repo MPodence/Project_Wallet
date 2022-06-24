@@ -1,1 +1,7 @@
-// Coloque aqui suas actions //pr
+export const SAVE_EMAIL = 'SAVE_EMAIL';
+
+const saveEmail = (userEmail) => ({
+  type: SAVE_EMAIL,
+  payload: userEmail,
+});
+export default saveEmail;
