@@ -1,7 +1,12 @@
 export const SAVE_EMAIL = 'SAVE_EMAIL';
+export const GET_CURRENCIES = 'GET_CURRENCIES';
 
-const saveEmail = (userEmail) => ({
+export const saveEmail = (userEmail) => ({
   type: SAVE_EMAIL,
   payload: userEmail,
 });
-export default saveEmail;
+
+export const getCurrencies = (responseAPI) => ({
+  type: GET_CURRENCIES,
+  payload: responseAPI,
+});

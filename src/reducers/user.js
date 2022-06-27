@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   email: '', // string que armazena o email da pessoa usuária
 };
 
-const user = (state = INITIAL_STATE, action) => { // o proprio erro no console me deu a dica de iniciar como null caso eu nao queira valor, ja que nao é aceito undefined.
+const user = (state = INITIAL_STATE, action) => {
   switch (action.type) {
   case SAVE_EMAIL:
     return {
