@@ -18,7 +18,7 @@ class Login extends React.Component {
      if (senha.value.length
       >= minChar
       && email.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) { // https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
-       this.setState({ isButtonDisabled: false }); // vi várias opções pra validar o email nesse post, mas optei por um regex simples
+       this.setState({ isButtonDisabled: false });
      } else {
        this.setState({ isButtonDisabled: true });
      }
@@ -74,4 +74,4 @@ Login.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default connect()(Login); // esse metodo que o Cestari usou deixou muito mais simples, então optei.
+export default connect()(Login);
